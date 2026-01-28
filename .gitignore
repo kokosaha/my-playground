@@ -1,0 +1,13 @@
+# 应用数据（保留目录结构，忽略内容）
+data/01-gitlab/config/*
+!data/01-gitlab/config/.gitkeep
+data/01-gitlab/logs/*
+!data/01-gitlab/logs/.gitkeep
+data/01-gitlab/data/*
+!data/01-gitlab/data/.gitkeep
+
+# 通用
+.DS_Store
+*.log
+.env
+.env.local
