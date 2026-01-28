@@ -27,5 +27,6 @@ docker compose up -d
 
 - Web：http://localhost:8080
 - Git SSH：`ssh://git@localhost:2222/...`（端口 2222）
+- Macos tailscale：http://100.114.1.96:8080
 
 详见 [docs/01-gitlab/01-docker-install-plan.md](../../docs/01-gitlab/01-docker-install-plan.md)。
