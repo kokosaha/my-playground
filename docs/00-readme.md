@@ -14,7 +14,8 @@ docs/
 ├── 01-gitlab/             # GitLab 相关
 │   ├── 01-docker-install-plan.md
 │   └── ...
-├── 02-xxx/                # 其他主题（预留）
+├── 02-my-mail/             # 邮件服务器连通与登录测试
+│   └── 01-mail-server-connectivity-design.md
 └── ...
 ```
 
@@ -23,6 +24,7 @@ docs/
 | 序号 | 路径 | 说明 |
 |------|------|------|
 | 01 | [01-gitlab/01-docker-install-plan.md](01-gitlab/01-docker-install-plan.md) | GitLab Docker 安装方案（本地、中文、中国区） |
+| 02 | [02-my-mail/01-mail-server-connectivity-design.md](02-my-mail/01-mail-server-connectivity-design.md) | 邮件服务器连通性与登录测试方案设计 |
 
 ## 脚本与部署
 
