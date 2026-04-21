@@ -1,0 +1,17 @@
+services:
+  nginx-lb:
+    image: nginx:1.24.0-alpine
+    container_name: nginx_mqtt_lb
+    restart: always
+    ports:
+      - "8443:8883"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    networks:
+      - emqx-net
+
+networks:
+  emqx-net:
+    external: true
+    name: 02-emqx_emqx-net
