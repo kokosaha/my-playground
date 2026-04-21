@@ -11,6 +11,7 @@ data/01-gitlab/data/*
 *.log
 .env
 .env.local
+AGENTS.md
 
 # 邮件测试凭证（若将密码单独放在此目录）
 docs/02-my-mail/*.env
