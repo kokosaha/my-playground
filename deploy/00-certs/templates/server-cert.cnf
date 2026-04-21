@@ -1,0 +1,11 @@
+basicConstraints = CA:FALSE
+keyUsage = critical,digitalSignature,keyEncipherment
+extendedKeyUsage = critical,serverAuth
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer
+subjectAltName = @alt_names
+
+[alt_names]
+# 根据实际服务端配置填写
+# IP = 127.0.0.1
+# DNS = emqx.internal
