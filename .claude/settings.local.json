@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nc -zv 10.103.11.50 6379)",
+      "Bash(timeout 5 bash -c \"echo | telnet 10.103.11.50 6379\")",
+      "Bash(nc -z -w 3 10.103.11.50 6379)",
+      "Bash(echo \"exit code: $?\")",
+      "Bash(curl -s --connect-timeout 5 telnet://10.103.11.50:6379)",
+      "Bash(timeout 3 bash -c \"echo > /dev/tcp/10.103.11.50/6379\")",
+      "Bash(ping:*)",
+      "Bash(echo \"nc exit: $?\")",
+      "Bash(nc -z -w 1 10.103.11.50 6379)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(python3:*)",
+      "Bash(nmap -Pn -T4 --max-retries 1 -p 22,80,443,6379,8080,3306,5432,27017 10.103.11.50)",
+      "Bash(openssl x509:*)",
+      "Bash(chmod +x deploy/00-certs/scripts/*.sh)",
+      "Bash(./scripts/generate-root-ca.sh)",
+      "Bash(./scripts/generate-intermediate-ca.sh:*)",
+      "Bash(./scripts/issue-model-cert.sh CZ-EVSE-AC7kW:*)",
+      "Bash(openssl verify:*)",
+      "Bash(find /Users/yejingtian/Documents/100_work/110_project/my-playground/deploy/00-certs -name \"metadata.json\" -delete)",
+      "Bash(./scripts/generate-server-csr.sh server:*)",
+      "Bash(chmod +x ./scripts/*.sh)",
+      "Bash(./scripts/generate-server-csr.sh:*)",
+      "Bash(./scripts/issue-server-cert.sh:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
