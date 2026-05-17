@@ -1,0 +1,18 @@
+services:
+  mysql57:
+    image: mysql:5.7
+    platform: linux/amd64
+    container_name: mysql57
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+    volumes:
+      - ./data:/var/lib/mysql
+    networks:
+      - mysql-net
+
+networks:
+  mysql-net:
+    driver: bridge

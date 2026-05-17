@@ -6,6 +6,10 @@ data/01-gitlab/logs/*
 data/01-gitlab/data/*
 !data/01-gitlab/data/.gitkeep
 
+# MySQL
+deploy/06-mysql/data/
+deploy/06-mysql/*.sql
+
 # 通用
 .DS_Store
 *.log
