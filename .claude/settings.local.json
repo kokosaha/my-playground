@@ -26,7 +26,15 @@
       "Bash(./scripts/issue-server-cert.sh:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(orbstack list:*)",
+      "Bash(orbctl list:*)",
+      "Bash(docker context:*)",
+      "Bash(chmod +x:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(docker pull:*)",
+      "Bash(docker exec:*)",
+      "Bash(./import.sh:*)"
     ]
   }
 }
